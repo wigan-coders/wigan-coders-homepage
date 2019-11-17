@@ -25,7 +25,14 @@ export default {
 <style>
 .navbar {
   font-family: 'Poppins', sans-serif;
-
+}
+.nav {
+  height: 100% !important;
+  max-height: 100px !important;
+}
+ul {
+  position: relative;
+  top: 36px;
 }
 
 </style>
