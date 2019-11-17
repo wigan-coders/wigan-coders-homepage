@@ -6,9 +6,15 @@
       <div class="contact-links">
         <h3 class="contact-h3">Find us on Social Media</h3>
         <div class="icons">
+          <a href="https://www.facebook.com/rybrockley/" target="blank">
           <i class="fab fa-facebook"></i>
+          </a>
+          <a href="https://twitter.com/WiganCoders" target="blank">
           <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://github.com/wigan-coders/wigan-coders-homepage" target="blank">
           <i class="fab fa-github"></i>
+          </a>
         </div>
       </div>
     </div>
@@ -37,6 +43,7 @@ nav {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-top: 4%;
 }
 
 .contact-links {
@@ -47,6 +54,8 @@ nav {
 }
 .contact-h2 {
   font-size: 40px;
+  padding: 0 auto;
+  margin: 0 auto;
 }
 .contact-h3 {
   font-size: 30px;
@@ -64,13 +73,15 @@ nav {
 .fa-twitter {
   color: #39a2f2;
 }
+.fa-github {
+  color: #000000;
+}
 
 .icons {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  margin-left: 30px;
 }
 .main-content p {
   padding: 0;
