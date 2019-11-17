@@ -1,6 +1,8 @@
 <template>
   <div class="contact">
-
+<div class="main-content">
+  <h2>Get in touch today!</h2>
+</div>
   </div>
 </template>
 
@@ -15,5 +17,9 @@ export default {
 </script>
 
 <style>
+.contact {
+  font-family: 'Poppins', sans-serif;
+
+}
 
 </style>

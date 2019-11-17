@@ -23,5 +23,9 @@ export default {
 </script>
 
 <style>
+.navbar {
+  font-family: 'Poppins', sans-serif;
+
+}
 
 </style>
