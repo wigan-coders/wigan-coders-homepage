@@ -34,6 +34,22 @@ export default {
 .home {
   font-family: "Poppins", sans-serif;
 }
+img {
+  border-radius: 10px;
+  padding: 5px;
+}
+h2 {
+  text-align: center;
+}
+.img-txt-1 {
+  padding: 20px;
+}
+.img-txt-1 p {
+  line-height: 35px;
+}
+.home-content {
+  margin-top: 4%;
+}
 .top-content {
   display: flex;
   justify-content: center;
