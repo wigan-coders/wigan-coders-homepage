@@ -179,7 +179,7 @@ footer {
   margin-bottom: 50px;
 }
 
-@media only screen and (max-width: 250px) {
+@media only screen and (max-width: 300px) {
   body {
     display: flex;
     justify-content: center;

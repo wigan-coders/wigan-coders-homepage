@@ -57,7 +57,7 @@ ul {
   font-size: 30px !important;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 300px) {
   ul li a{
     display: flex;
     justify-content: center;

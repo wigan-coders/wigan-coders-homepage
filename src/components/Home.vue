@@ -4,7 +4,15 @@
       <div class="jumbo">
         <p>Welcome to Wigan Coders. Let us help you on your coding journey today!</p>
       </div>
-      <h2>Welcome Home</h2>
+      <h2>Welcome Coders</h2>
+      <div class="top-content">
+        <div class="img-1">
+          <img src="static/keyboard.jpg" alt="keyboard-image" />
+        </div>
+        <div class="img-txt-1">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora ex fugit quae cum temporibus, perspiciatis commodi consequatur eum? Laborum cum commodi quo perferendis maiores natus quod dicta nihil ipsum voluptatem!</p>
+        </div>s
+      </div>
     </div>
     <footer class="grey darken-3">
       <div class="copyright">Copyright 2019</div>
@@ -23,11 +31,14 @@ export default {
 </script>
 
 <style>
-.home-content {
+.home {
+  font-family: "Poppins", sans-serif;
+}
+.top-content {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
   margin-top: 4%;
 }
 nav {
