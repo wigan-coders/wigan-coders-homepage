@@ -1,6 +1,9 @@
 <template>
   <div class="contact">
     <div class="main-content">
+      <div class="jumbo">
+        <p>Contacting us is easy. If it's through social media or plain old phone-call. Check below and get in touch today.</p>
+      </div>
       <h2 class="contact-h2">Get in touch!</h2>
       <p>Start your Coding Journey today!</p>
       <div class="contact-links">
@@ -19,7 +22,7 @@
       </div>
     </div>
     <div class="mid-content">
-      <h2 class="email-h2">Not on Social Media</h2>
+      <h2 class="email-h2">Not on Social Media?</h2>
       <p>Send us an email or give us a call</p>
 
       <div class="contact-links">
@@ -35,6 +38,10 @@
         </div>
       </div>
     </div>
+    <footer class="grey darken-3">
+      <div class="copyright">Copyright 2019</div>
+      <div>Created by Ryan Brockley</div>
+    </footer>
   </div>
 </template>
 
@@ -86,7 +93,7 @@ nav {
   -moz-box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.75);
   padding: 5px;
-  margin-bottom: 15%;
+  margin-bottom: 10%;
 }
 
 .contact-h2 {
@@ -131,6 +138,8 @@ nav {
 }
 .fa-envelope {
   color: #3b3b3b;
+  position: relative;
+  right: 6px;
 }
 
 .icons {
@@ -148,5 +157,34 @@ nav {
 }
 .icons-2 .phone-span {
   color: #000000;
+}
+footer {
+  color: #e6e8e1;
+  height: 100%;
+  max-height: 100px !important;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  padding: 20px;
+}
+.copyright {
+  padding: 5px;
+}
+.jumbo {
+  background: #39a2f2;
+  width: 100%;
+  padding: 20px;
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 250px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 </style>
