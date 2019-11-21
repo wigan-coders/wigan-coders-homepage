@@ -16,7 +16,7 @@
       </div>
       <div class="mid-content">
         <div class="quote">
-          <p>"Talk is cheap, show me the code"</p>
+          <q>"Talk is cheap, show me the code"</q>
         </div>
       </div>
     </div>
