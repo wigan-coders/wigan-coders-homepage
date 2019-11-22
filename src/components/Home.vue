@@ -11,12 +11,19 @@
           <img src="static/keyboard.jpg" alt="keyboard-image" />
         </div>
         <div class="img-txt-1">
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora ex fugit quae cum temporibus, perspiciatis commodi consequatur eum? Laborum cum commodi quo perferendis maiores natus quod dicta nihil ipsum voluptatem!</p>
+          <p>Learning how to code can be a very daunting experience. Here at Wigan Coders, we try to help you understand any technical jargon, and help get you started on the correct path into learning how to code. Our Meet-Up group is led by two full time web developers with industry experience, ensuring you are taught the best in up to date coding practices.</p>
         </div>
       </div>
       <div class="mid-content">
-        <div class="quote">
-          <q>"Talk is cheap, show me the code"</q>
+        <div class="first">
+          <div class="icons-first">
+            <i class="fas fa-tablet-alt"></i>
+            <i class="far fa-window-restore"></i>
+          </div>
+
+          <div class="second">
+            <p>If it's websites or applications you would like to build, or gain knowledge in how this is done, then this is the place for you. We have course is HTML and CSS and very soon to be JavaScript. These three coding practices combined can help us build some beautiful, responsive websites and applications.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -40,7 +47,6 @@ export default {
 .home {
   font-family: "Poppins", sans-serif;
   color: #726f6f;
-
 }
 img {
   border-radius: 10px;
@@ -66,6 +72,7 @@ h2 {
   align-items: center;
   flex-direction: row;
   margin-top: 4%;
+  width: 100%;
 }
 nav {
   height: 100px;
@@ -83,6 +90,7 @@ footer {
   align-items: center;
   flex-direction: row;
   padding: 20px;
+  width: 100%;
 }
 .copyright {
   padding: 5px;
@@ -99,12 +107,85 @@ footer {
   padding: 0;
   margin: 0;
 }
-.quote {
-  background: #f9caca;
-  margin-top: 5%;
-}
 .mid-content p {
   text-align: center;
   padding: 10px;
+  width: 100%;
+
+}
+.mid-content {
+  margin-top: 10%;
+  width: 100%;
+  max-width: 100%;
+}
+
+.first {
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background: #e5e5ea;
+  margin: 60px auto 30px auto;
+}
+.icons-first {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 20px;
+}
+.second p {
+  line-height: 35px;
+  width: 100%;
+  max-width: 500px;
+  margin-left: 5%;
+
+}
+.fa-tablet-alt {
+  color: #8c8c99;
+  font-size: 50px;
+  margin: 20px 20px;
+}
+.fa-window-restore {
+  color: #8c8c99;
+  font-size: 50px;
+  margin: 20px 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .top-content {
+      display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  }
+  .mid-content {
+          display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  }
+   .first {
+      display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  }
+
+
+@media only screen and (max-width: 900px) {
+   img {
+  width: 100%;
+
+  }
+    .top-content {
+      display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  }
+}
 }
 </style>
