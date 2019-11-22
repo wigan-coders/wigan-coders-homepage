@@ -16,19 +16,20 @@
       </div>
       <div class="mid-content">
         <div class="first">
-          <div class="icons-first">
-            <i class="fas fa-tablet-alt"></i>
-            <i class="far fa-window-restore"></i>
-          </div>
-
-          <div class="second">
-            <p>If it's websites or applications you would like to build, or gain knowledge in how this is done, then this is the place for you. We have course is HTML and CSS and very soon to be JavaScript. These three coding practices combined can help us build some beautiful, responsive websites and applications.</p>
+            <h4>Let's build the future together!</h4>
+            <div class="icons-first">
+              <i class="fas fa-tablet-alt"></i>
+              <i class="far fa-window-restore"></i>
+            </div>
+            <div class="second">
+              <p>If it's websites or applications you would like to build, or gain knowledge in how this is done, then this is the place for you. We have course is HTML and CSS and very soon to be JavaScript. These three coding practices combined can help us build some beautiful, responsive websites and applications.</p>
           </div>
         </div>
       </div>
     </div>
-    <footer class="grey darken-3">
-      <div class="copyright">Copyright 2019</div>
+    <footer class="page-footer grey darken-3">
+
+      <div class="footer-copyright">Copyright Wigan Coders 2019</div>
       <div>Created by Ryan Brockley</div>
     </footer>
   </div>
@@ -55,6 +56,7 @@ img {
 h2 {
   text-align: center;
   color: #726f6f;
+  width: 100%;
 }
 .img-txt-1 {
   padding: 20px;
@@ -73,6 +75,12 @@ h2 {
   flex-direction: row;
   margin-top: 4%;
   width: 100%;
+}
+ul {
+  position: relative;
+}
+h4 {
+  display: block;
 }
 nav {
   height: 100px;
@@ -111,7 +119,6 @@ footer {
   text-align: center;
   padding: 10px;
   width: 100%;
-
 }
 .mid-content {
   margin-top: 10%;
@@ -141,7 +148,6 @@ footer {
   width: 100%;
   max-width: 500px;
   margin-left: 5%;
-
 }
 .fa-tablet-alt {
   color: #8c8c99;
@@ -156,36 +162,38 @@ footer {
 
 @media only screen and (max-width: 600px) {
   .top-content {
-      display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
   .mid-content {
-          display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
-   .first {
-      display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  .first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 
-
-@media only screen and (max-width: 900px) {
-   img {
-  width: 100%;
-
-  }
+  @media only screen and (max-width: 900px) {
+    img {
+      width: 100%;
+    }
     .top-content {
       display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    ul {
+      position: relative;
+      top: 0 !important;
+    }
   }
-}
 }
 </style>

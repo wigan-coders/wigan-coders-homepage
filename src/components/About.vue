@@ -2,7 +2,12 @@
   <div class="about">
     <div class="about-content">
        <div class="jumbo">
-        <p>Welcome to Wigan Coders. Let us help you on your coding journey today!</p>
+        <p class="jumbo-p">Welcome to Wigan Coders. Let us help you on your coding journey today!</p>
+      </div>
+    </div>
+    <div class="about-content">
+      <div class="image">
+        <img src="" alt="">
       </div>
     </div>
   <footer class="grey darken-3">
@@ -15,6 +20,16 @@
 <script>
 export default {
   name: 'About',
+
+  methods: {
+    changeUsp() {
+      const changed = document.querySelector("p");
+      console.log(changed.innerHTML);
+      console.log('hello');
+      }
+    },
+
+
   data () {
     return {
     }
