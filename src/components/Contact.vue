@@ -68,6 +68,7 @@ nav {
   align-items: center;
   flex-direction: column;
   margin-top: 4%;
+  width: 100%;
 }
 .main-content p {
   padding: 0;

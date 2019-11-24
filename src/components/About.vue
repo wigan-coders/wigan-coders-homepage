@@ -55,6 +55,7 @@ export default {
   align-items: center;
   flex-direction: column;
   margin-top: 4%;
+  width: 100%;
 }
 .about-content p {
   padding: 0;
