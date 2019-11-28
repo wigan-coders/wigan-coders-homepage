@@ -2,10 +2,9 @@
   <div class="home">
     <div class="home-content">
       <div class="jumbo">
-        <p>Welcome to Wigan Coders. Let us help you on your coding journey today!</p>
+        <span id="usp">{{ usp }}</span>
       </div>
       <h2>Welcome Coders</h2>
-      <!-- <button v-on:click="greet()" class="btn">Greet</button> -->
       <div class="top-content">
         <div class="img-1">
           <img src="static/keyboard.jpg" alt="keyboard-image" />
@@ -30,7 +29,7 @@
         <div class="com-img">
           <div class="com-p">
             <h4 class="comm-h4">A close community</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime libero, corrupti repellat nesciunt, omnis tempore fugit delectus a reprehenderit alias esse ipsum corporis sit facere cum in sequi enim deleniti!</p>
+            <p>We have a small group who meet every Saturday morning @ the Wigan Library. We are growing.</p>
             <br />
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ex exercitationem modi illo, a quam ducimus blanditiis corporis distinctio, animi magnam deserunt. Commodi officiis deleniti amet sapiente cupiditate est voluptas.</p>
           </div>
@@ -53,7 +52,26 @@
 export default {
   name: "Home",
   data() {
-    return {};
+    return {
+      usp:
+        "Welcome to Wigan Coders. Let us help you on your coding journey today!"
+    };
+  },
+
+  mounted() {
+    var text = ["Learn HTML, CSS and JavaScript"];
+    var counter = 0;
+    var elem = document.getElementById("usp");
+    var inst = setInterval(change, 3000);
+
+    function change() {
+      elem.innerHTML = text[counter];
+      counter++;
+      if (counter >= text.length) {
+        counter = 0;
+        // clearInterval(inst); // uncomment this if you want to stop refreshing after one cycle
+      }
+    }
   }
 };
 </script>
@@ -129,6 +147,7 @@ footer {
 .home-content p {
   padding: 0;
   margin: 0;
+  font-size: 20px;
 }
 .mid-content p {
   text-align: center;
@@ -163,6 +182,7 @@ footer {
   line-height: 35px;
   width: 100%;
   max-width: 500px;
+  font-size: 20px;
 }
 .fa-tablet-alt {
   color: #8c8c99;
@@ -177,14 +197,14 @@ footer {
 .comm-h4 {
   text-align: center;
   color: #726f6f;
-  margin-bottom: 5%;
+  margin-bottom: 10%;
   padding: 30px;
   margin: 0;
   width: 100%;
 }
 .com-content {
   text-align: center;
-  margin-top: 5%;
+  margin-top: 20%;
   background: #f9f9d1;
   border-radius: -50%;
   width: 100%;
@@ -194,6 +214,8 @@ footer {
   width: 100%;
   max-width: 50%;
   margin-right: 12%;
+  line-height: 35px;
+  font-size: 20px;
 }
 
 .fa-people-carry {
@@ -202,10 +224,6 @@ footer {
   padding: 20px;
 }
 
-.com-content {
-  margin-top: 5%;
-  width: 100%;
-}
 .com-img {
   display: flex;
   justify-content: flex-end;
@@ -213,6 +231,7 @@ footer {
   flex-direction: row;
   padding: 10px;
   background: #f9f9d1;
+  margin-top: 8%;
 }
 @media only screen and (max-width: 600px) {
   .top-content {
@@ -249,11 +268,15 @@ footer {
       top: 0 !important;
     }
   }
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 600px) {
+    .com-img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
     .com-p {
       width: 100%;
-      max-width: 50%;
-      margin-right: 12%;
     }
   }
 }
